@@ -1,10 +1,9 @@
 {
   "name": "ocr_14_library",
-  "version": "0.1.0",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "version": "0.1.5",
+  "main": "build/static/js/main.js",
   "files": [
-    "dist",
+    "build",
     "README.md"
   ],
   "repository": {
@@ -19,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,7 +41,6 @@
     ]
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
